@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchMoviesFromDatabase } from "../../NetworkConnections";
 import SingleMovie from "../SingleMovie/SingleMovie";
+import "../../App.css";
 
 export default function MovieList(props){
     const[movies, setMovies] = useState([]);

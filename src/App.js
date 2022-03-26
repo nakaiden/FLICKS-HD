@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
+import SearchBar from './Components/SearchBar/SearchBar';
 import SingleMovie from './Components/SingleMovie/SingleMovie';
 import MovieList from './Components/MovieList/MovieList';
 import { useEffect, useState } from 'react';
@@ -22,7 +23,10 @@ function App() {
 return (
 
   <div className="main-container">
-    <Navbar />
+    <div className='Header'>
+      <Navbar/>
+      <SearchBar/>
+    </div>
     {/* <SingleMovie id = '650'/> */}
     <MovieList list='trending/all/day' title="Today's Trending:" movieGenres={movieGenres} tvGenres={tvGenres} />
   </div>

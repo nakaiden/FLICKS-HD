@@ -1,0 +1,7 @@
+.genre-list{
+    display: block;
+    flex-direction: row row row;
+  
+    /* border: 3px solid red; */
+}
+
