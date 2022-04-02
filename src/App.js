@@ -17,20 +17,22 @@ function App() {
     fetchMoviesFromDatabase('genre/movie/list')
       .then(res => setMovieGenres(res.genres))
 
-  fetchMoviesFromDatabase('genre/tv/list')
-    .then(res => setTVGenres(res.genres))
-}, [])
-return (
+    fetchMoviesFromDatabase('genre/tv/list')
+      .then(res => setTVGenres(res.genres))
+  }, [])
+  return (
 
-  <div className="main-container">
-    <div className='Header'>
-      <Navbar/>
-      <SearchBar/>
+    <div className="main-container">
+      <Navbar />
+      <div className='Search-Header'>
+      <SearchBar movieGenres={movieGenres} tvGenres={tvGenres} />
+      </div>
+      <h1>Today's Trending:</h1>
+      <MovieList list='trending/all/day' movieGenres={movieGenres} tvGenres={tvGenres} />
+      {/* <SingleMovie id = '650'/> */}
     </div>
-    {/* <SingleMovie id = '650'/> */}
-    <MovieList list='trending/all/day' title="Today's Trending:" movieGenres={movieGenres} tvGenres={tvGenres} />
-  </div>
-);
+  );
 }
 
 export default App;
+

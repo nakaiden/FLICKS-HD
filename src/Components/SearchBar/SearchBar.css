@@ -1,0 +1,14 @@
+.Search-Bar{
+background-color:rgb(33,37,41);
+color: #ffffff;
+float:right;
+display: flex;
+justify-content:flex-end;
+align-items: flex-end;
+    
+}
+
+input.Search-Button{
+    background-color: rgb(33,37,41);
+   
+}

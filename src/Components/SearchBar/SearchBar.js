@@ -2,6 +2,7 @@ import { useState } from "react";
 import { fetchMoviesFromDatabase } from "../../NetworkConnections";
 import SingleMovie from "../SingleMovie/SingleMovie";
 import MovieList from "../MovieList/MovieList";
+import "./SearchBar.css";
 
 
 export default function SearchBar(props) {
@@ -16,14 +17,14 @@ export default function SearchBar(props) {
         console.log(event)
         setSearchName(event.target.value)
     }
-    console.log(searchName)
+    console.log(movies)
     return (
     <div className="search-component">
         <input className="Search-Bar" value={searchName} onChange={handleChange}/>
-        <button onClick={searchMovies}> Search</button>
+        <button className="Search-Button" onClick={searchMovies}> Search</button>
         {/* <MovieList title={props.title} movies={movies} genres={props.genres} /> */}
         <div className="movie-list">
-            {movies.map(movie => <SingleMovie key={movie.id} movie={movie} />)}
+            {movies?.map(movie => <SingleMovie key={movie.id} movie={movie} movieGenres={props.movieGenres} tvGenres={props.tvGenres}/>)}
         </div>
     </div>
     );

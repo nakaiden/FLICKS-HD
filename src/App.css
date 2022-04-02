@@ -1,31 +1,53 @@
-body{
+/* body{
+  background-color: black;
   display: flex;
   justify-content: center;
-}
-.movie-list{
+
+} */
+.movie-list{  
+  
+  padding-top: 15px;
   display: flex ;
   flex-wrap: wrap;
   justify-content: center;
-
+  background-color: rgb(33,37,41);
 }
 
 .single-movie{
-  width: 300px;
+  background-color:rgb(33,37,41);
+  width:250px;
   height: 600px;
-  padding: 1px;
+  padding: 5px;
   justify-content: center;
+  margin-bottom: 5px;
+  overflow: hidden;
 
 }
 .single-movie img{
   width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.Header{
+.Search{
+  border-radius: 2px;
+
+}
+
+.Search-Header{
   display: flex;
-  background-color: rgb(33,37,41);
+  justify-content: right;
+  margin-top: 5px;
+  border-radius: 2px;
+  
+
 }
 
-.Search-Bar{
-  border-radius: 10px;
+.main-container{
+  background-color: rgb(33 37 41 / 1);
+  color: #ffffff;
+
 }
+
+
 
