@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { fetchMoviesFromDatabase, GenreContext } from "../../NetworkConnections";
 import "./SingleMovie.css"
 
 export default function SingleMovie(props) {

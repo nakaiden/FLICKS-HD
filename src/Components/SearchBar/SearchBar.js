@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchMoviesFromDatabase } from "../../NetworkConnections";
 import SingleMovie from "../SingleMovie/SingleMovie";
-import MovieList from "../MovieList/MovieList";
+//import MovieList from "../MovieList/MovieList";
 import "./SearchBar.css";
 
 
