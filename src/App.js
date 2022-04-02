@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import SearchBar from './Components/SearchBar/SearchBar';
-import SingleMovie from './Components/SingleMovie/SingleMovie';
 import MovieList from './Components/MovieList/MovieList';
 import { useEffect, useState } from 'react';
 import { fetchMoviesFromDatabase } from './NetworkConnections'

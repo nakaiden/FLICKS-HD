@@ -8,6 +8,7 @@ export default function MovieList(props){
     useEffect(() =>{
         fetchMoviesFromDatabase(props.list)
             .then(res => setMovies(res.results));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     //console.log(movies);
